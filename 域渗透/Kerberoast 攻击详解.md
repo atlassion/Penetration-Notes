@@ -57,7 +57,9 @@ setspn -D mysql/admin-PC.test.lab yuwin7
 setspn -L username/hostname
 ```
 > C:\Users\test>setspn -Q */*
+> 
 > 正在检查域 DC=test,DC=lab
+> 
 > CN=DC,OU=Domain Controllers,DC=test,DC=lab
 >         Dfsr-12F9A27C-BF97-4787-9364-D31B6C55EB04/dc.test.lab
 >         ldap/dc.test.lab/ForestDnsZones.test.lab
