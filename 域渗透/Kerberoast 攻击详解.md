@@ -56,31 +56,33 @@ setspn -D mysql/admin-PC.test.lab yuwin7
 #查找指定用户/主机名注册的SPN：
 setspn -L username/hostname
 ```
-#C:\Users\test>setspn -Q */*
-#正在检查域 DC=test,DC=lab
-#CN=DC,OU=Domain Controllers,DC=test,DC=lab
-#         Dfsr-12F9A27C-BF97-4787-9364-D31B6C55EB04/dc.test.lab
-#         ldap/dc.test.lab/ForestDnsZones.test.lab
-#         ...
-#         ldap/dc.test.lab
-#         ldap/dc.test.lab/test.lab
-# CN=krbtgt,CN=Users,DC=test,DC=lab
-#         kadmin/changepw
-# CN=test,CN=Users,DC=test,DC=lab
-#         MySQL/test.lab:3306
-# CN=WIN2012,CN=Computers,DC=test,DC=lab
-#         WSMAN/win2012
-#         ...
-#         HOST/win2012.test.lab
-# CN=ADMIN-PC,CN=Computers,DC=test,DC=lab
-#         TERMSRV/ADMIN-PC
-#         ...
-#         HOST/ADMIN-PC.test.lab
-# CN=WIN2012-2,CN=Computers,DC=test,DC=lab
-#         WSMAN/win2012-2
-#         WSMAN/win2012-2.test.lab
-#         ...
-#         HOST/win2012-2.test.lab
+```
+C:\Users\test>setspn -Q */*
+正在检查域 DC=test,DC=lab
+CN=DC,OU=Domain Controllers,DC=test,DC=lab
+        Dfsr-12F9A27C-BF97-4787-9364-D31B6C55EB04/dc.test.lab
+        ldap/dc.test.lab/ForestDnsZones.test.lab
+        ...
+        ldap/dc.test.lab
+        ldap/dc.test.lab/test.lab
+CN=krbtgt,CN=Users,DC=test,DC=lab
+        kadmin/changepw
+CN=test,CN=Users,DC=test,DC=lab
+        MySQL/test.lab:3306
+CN=WIN2012,CN=Computers,DC=test,DC=lab
+        WSMAN/win2012
+        ...
+        HOST/win2012.test.lab
+CN=ADMIN-PC,CN=Computers,DC=test,DC=lab
+        TERMSRV/ADMIN-PC
+        ...
+        HOST/ADMIN-PC.test.lab
+CN=WIN2012-2,CN=Computers,DC=test,DC=lab
+        WSMAN/win2012-2
+        WSMAN/win2012-2.test.lab
+        ...
+        HOST/win2012-2.test.lab
+```
 
 以CN开头的每一行代表一个帐户，其下的信息是与该帐户相关联的SPN
 对于上面的输出数据，机器帐户(Computers)为：
